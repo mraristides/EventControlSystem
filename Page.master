@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Page.master.cs" Inherits="Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Pagina Inicial" />   
+        <title></title>
+        <asp:ContentPlaceHolder id="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <link href="../lib/bootstrap/Content/bootstrap.css" rel="stylesheet"/>
+        <link href="../lib/bootstrap/Content/bootstrap-theme.css" rel="stylesheet"/>
+        <link href="../lib/bootstrap/Content/StyleSheet.css" rel="stylesheet"/>
+    </head>
+<body>
+    <form id="form1" runat="server">        
+        <asp:ScriptManager ID="ScriptManager" runat="server" EnableScriptGlobalization="True"></asp:ScriptManager>
+        <header class="header">              
+            <div class="container box-shadow">
+                <div class="row header-color">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="text-left">
+                            <asp:ImageButton CssClass="logo" ID="ImageButton" runat="server" PostBackUrl="~/" CausesValidation="False" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">         
+
+                    </div>                    
+                </div>      
+            </div>                        
+        </header>
+        
+        
+            
+        <div class="container box-shadow">                  
+        <asp:Panel id="PainelBar" runat="server" Visible="False">
+            <div class="row bar-header">
+                <div class="content-bar">  
+                    <div class="buttons-header">               
+                    <asp:ContentPlaceHolder id="BackButton" runat="server">
+        
+                    </asp:ContentPlaceHolder>          
+                    
+                    <asp:Button CssClass="button-voltar" ID="Atualizar" runat="server" Text="Atualizar" CausesValidation="False" OnClick="Atualizar_Click"  />
+                    </div>   
+
+                    <div class="infos">
+                        <div class="header-infos">
+                            <i class="fa fa-users" style="color:blue" aria-hidden="true"></i><span>Numero de Participantes: <asp:Label ID="UsersLabel" runat="server" Text="Label" Font-Bold="True"></asp:Label></span>
+                        </div>  
+                        <div class="header-infos">
+                            <i class="fa fa-user" style="color:#00ff21" aria-hidden="true"></i><span>Pagantes: <asp:Label ID="PagoLabel" runat="server" Text="Label" Font-Bold="True"></asp:Label></span>
+                        </div>  
+                        <div class="header-infos">
+                            <i class="fa fa-user" style="color:#ff0000" aria-hidden="true"></i><span>A pagar: <asp:Label ID="PendenteLabel" runat="server" Text="Label" Font-Bold="True"></asp:Label></span>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </asp:Panel>
+        <div class="title-header">
+            <asp:Label ID="LabelSmall" runat="server" Text="Label" Enabled="False" Visible="False"></asp:Label>
+            <asp:Label ID="seasonLabel" CssClass="title-pages" runat="server"></asp:Label>
+        </div>  
+            
+        <div class="content">               
+            <asp:ContentPlaceHolder id="Content" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container footer box-shadow">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <span>Todos os direitos reservados - 2016</span> </div>                    
+             </div>
+        </div>
+    </footer>
+
+    </form>
+
+    <script src="../lib/bootstrap/Scripts/jquery-1.9.1.js"></script>
+    <script src="../lib/bootstrap/Scripts/bootstrap.js"></script>
+    <script src="../lib/js/Scripts.js"></script>
+</body>
+</html>

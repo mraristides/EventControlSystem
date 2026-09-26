@@ -1,0 +1,359 @@
+﻿/* 
+    /////////////////////////////////////////
+    ////////////// BY BLIND /////////////////
+    /////////////////////////////////////////
+*/
+
+body {    
+}
+
+.width-100 {
+    width: 100%;
+}
+.title-pages
+{
+    font-size: 25px;
+}
+.RadioClass td
+{
+    padding-left: 10px;
+}
+.display-none
+{  
+    display: none;
+}
+
+.header {
+    height: 90px;
+    max-width: 100%;
+    background-color: rgba(227,227,227, 1);
+    
+}
+.box-shadow {    
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.35);
+    
+}
+.content {
+    padding: 20px 0;
+}
+.bar-header {
+    background-color: rgba(227, 227, 227, 0.5);
+}
+
+.logo {
+    float:left;
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+    
+}
+
+.figure {
+    position: relative;
+
+}
+
+.figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.border {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+.button {
+    padding: 5px 35px;
+    text-transform: uppercase;  
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 3px 1px rgba(204,204,204,1);
+    -moz-box-shadow: 0 2px 3px 1px rgba(204,204,204,1);
+    box-shadow: 0 2px 3px 1px rgba(204,204,204,1);
+    font-size: 15px;
+    color: #663694;
+    background-color: rgba(227,227,227, 0.6);
+    font-weight: 700;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: rgba(227,227,227, 0.8);
+
+}
+
+.button:focus {
+    background-color: rgba(227,227,227, 1);
+    outline: none;
+    
+}
+
+.button-voltar {
+    border: none;
+    background-color: rgba(220,211,34, 1);
+    padding: 2px 30px;
+    -webkit-box-shadow: 0 2px 3px -2px rgba(0,0,0, 1);
+    -moz-box-shadow: 0 2px 3px -2px rgba(0,0,0, 1);
+    box-shadow: 0 2px 3px -2px rgba(0,0,0, 1);
+    font-weight: 700;
+
+}
+
+.button-voltar:hover {
+    background-color: rgba(220,211,34, 0.8);
+
+}
+
+.button-voltar:focus {
+    outline: none;
+
+}
+
+
+
+.content-bar {
+    padding: 5px;
+}
+
+.title-header {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+#LabelSmall {    
+    display: block;
+    font-size: 15px;
+    text-transform:capitalize;
+}
+
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.footer {
+    padding: 40px;
+    background-color: rgba(227,227,227, 1);
+    border-top: 5px solid rgba(220,211,34, 1);
+}
+
+.header-infos {
+    padding: 2px 10px;
+    background-color: rgba(227,227,227, 1);
+    border-radius: 30px;    
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-infos > i {
+    margin-right: 5px;
+}
+
+.content-base {
+    padding: 30px 0;
+}
+
+
+
+
+.DropClass {
+    padding: 5px 10px;
+    font-weight: 700;
+    background-color: rgba(227,227,227, 0.6);
+}
+
+.DropClass:focus {
+    outline: none;
+}
+
+.DropClass > option {
+    padding: 30px;
+}
+
+.Content {
+    background-color: #000;
+}
+
+.field {
+    display: block;
+    margin: 4px 0;
+}
+
+.field > input {
+    width: 100%;
+}
+
+.field > span {
+    display:block;
+}
+
+.block {
+    display: block !important;
+}
+
+.title-medium {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+
+.down {
+    display: inline-block !important;
+}
+.qr-painel {
+    margin: 20px 0;
+}
+
+.title-med {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.infos {
+    display: block;
+    margin-top: 20px;
+}
+
+.buttons-header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.drop > select {
+    width: 100%;
+    
+}
+
+.title-field {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.border-total 
+{
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    
+.title-pages
+{
+    font-size: 35px;
+}
+        .border-total 
+    {
+        border: 1px solid #CCC;
+        padding: 20px;
+    }
+    .bar-header {
+        padding-top: 4px;
+        padding-bottom: 10px;
+    }
+    .header-infos 
+    {
+    margin-bottom: 0;
+    }
+
+    .drop > select
+    {   
+        
+    }
+    .buttons-header 
+    {
+        margin-top: 0;
+        text-align: left;
+        float: left;
+    }
+    .infos {
+        float: right;
+        margin-top: 0;
+    }
+    .header-infos {        
+     display: inline-block;
+    }
+    .title-medium {
+        font-size: 22px;
+    }
+    .hora {
+        float: right;
+    }
+    .title-med {
+        float: left;
+        margin-bottom: 30px;
+    }
+
+    .logo 
+    {
+    max-width: 150px;
+    float: none;
+    }
+
+    .img-header 
+    {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .header 
+    {
+        height: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .header-color {
+        background-color: rgba(227,227,227, 1);       
+    }
+    .field 
+    {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .button-voltar 
+    {
+        padding: 2px 30px;
+    }
+
+    .logo 
+    {
+        max-width: 130px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .logo 
+    {
+    max-width: 180px;
+    }
+}
