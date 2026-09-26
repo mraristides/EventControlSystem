@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="the_ecs" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=BLIND\SQLEXPRESS;Initial Catalog=the_ecs;Integrated Security=True" SettingsObjectName="EventControlSystem.Properties.Settings" SettingsPropertyName="the_ecsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tb_event" Member="tb_events">
+    <Type Name="tb_event">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="entrada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="saida" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="horas" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="season_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_log_login" Member="tb_log_logins">
+    <Type Name="tb_log_login">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoginID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Evento" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tempo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_login" Member="tb_logins">
+    <Type Name="tb_login">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Login" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Senha" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="UserStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="UlitmoAcesso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_season" Member="tb_seasons">
+    <Type Name="tb_season">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Certificado" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Deletado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_users" Member="tb_users">
+    <Type Name="tb_user">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rg" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="telefone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="celular" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="curso" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ensino" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="periodo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="membro" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="pagamento" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
